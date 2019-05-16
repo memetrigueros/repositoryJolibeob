@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "jolibeob-app",
+    "jolibeob": "jolibeob-apprecetas"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "jolibeobApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

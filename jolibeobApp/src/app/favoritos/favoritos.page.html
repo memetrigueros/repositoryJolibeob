@@ -1,0 +1,79 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      favoritos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button color="danger" routerLink="/home" routerDirection="root">
+    <ion-icon name="arrow-back"  routerLink="/home" routerDirection="root"></ion-icon>
+  </ion-button>
+
+
+  <div padding>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="vegano">
+        Vegano
+      </ion-segment-button>
+      <ion-segment-button value="oriental">
+        Oriental
+      </ion-segment-button>
+      <ion-segment-button value="latino">
+        Latino
+      </ion-segment-button>
+      <ion-segment-button value="tipico">
+        Tipico
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'vegano'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/vegana.jpg">
+        </ion-thumbnail>
+        <h2>Comida Vegana</h2>
+      </ion-item>
+        Las personas que eligen la alimentación vegana se caracterizan por la abstención de comer carne y cualquier alimento de origen animal.
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'oriental'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/oriental.jpg">
+        </ion-thumbnail>
+        <h2>Comida Oriental</h2>
+      </ion-item>
+      Cuando se habla de la cocina o gastronomía del mundo oriental, es imposible no pensar en el concepto de alimentación saludable y de muchos tipos de verduras cocidas al wok, en el arroz en sus diferentes presentaciones e incluso en la famosa salsa de soya.
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'latino'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/latina.jpg">
+        </ion-thumbnail>
+        <h2>Comida Latina</h2>
+      </ion-item>
+      En la canasta alimenticia latina no faltan los granos de frijol,
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'tipico'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/tipica.jpg">
+        </ion-thumbnail>
+        <h2>Comida Tipica</h2>
+      </ion-item>
+      Multicultural, Guatemala está llena de diferentes grupos étnicos y diferentes personas,
+       cada una con una variedad de expresiones culturales. Una de esas expresiones es la gastronomía.
+        Y Guatemala está llena de platillos y sabores.
+    </ion-list>
+  </div>
+</ion-content>

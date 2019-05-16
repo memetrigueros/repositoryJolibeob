@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "145759650169",
+    "firebase_url": "https://jolibeob-app.firebaseio.com",
+    "project_id": "jolibeob-app",
+    "storage_bucket": "jolibeob-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145759650169:android:4e2210eafb482e8a",
+        "android_client_info": {
+          "package_name": "Jolibeob_app19.Recetas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145759650169-31fpq9v77a7cde6dp1ataileug62l86j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK0WTGu9HH2VRAS1uITCsf2cQb0sjJGMg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145759650169-31fpq9v77a7cde6dp1ataileug62l86j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

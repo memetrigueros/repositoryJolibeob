@@ -1,0 +1,370 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Categoria
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-button color="danger" routerLink="/home" routerDirection="root">
+    <ion-icon name="arrow-back"  routerLink="/home" routerDirection="root"></ion-icon>
+  </ion-button>
+
+  <div padding>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="vegano" (click)="ocultar()">
+        Vegano
+      </ion-segment-button>
+      <ion-segment-button value="oriental" (click)="ocultar()">
+        Oriental
+      </ion-segment-button>
+      <ion-segment-button value="latino" (click)="ocultar()">
+        Latino
+      </ion-segment-button>
+      <ion-segment-button value="tipico" (click)="ocultar()">
+        Tipico
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+<div class="">
+
+  <img src="assets/categoria.PNG"  [ngSwitch]="!pet" *ngIf="see">
+</div>
+
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'vegano'">
+      <ion-item>
+          <img src="assets/vegano.PNG">
+      </ion-item>
+        <ion-item  routerLink="/bulgur" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/bulgur.jpg">
+          </ion-thumbnail>
+          <ion-label>Ensaladilla de bulgur</ion-label>
+        </ion-item>
+
+        <ion-item routerLink="/ensalada" (click)="ocultar()" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/ensalada.jpg">
+          </ion-thumbnail>
+          <ion-label>Ensalada de espinacas y tofu</ion-label>
+        </ion-item>
+
+
+        <ion-item  routerLink="/peras" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/peras.jpg">
+          </ion-thumbnail>
+          <ion-label>Ensalada de peras glaseadas</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/gazpacho" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/gazpacho.jpg">
+          </ion-thumbnail>
+          <ion-label>Gazpacho manchego de verduras</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/arroz" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/arroz.jpg">
+          </ion-thumbnail>
+          <ion-label>Ensalada de arroz y guacamole</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/frito" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/frito.jpg">
+          </ion-thumbnail>
+          <ion-label>Arroz frito rápido</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/sopa" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/sopa.jpg">
+          </ion-thumbnail>
+          <ion-label>Sopa de miso y tofu</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/berenjenas" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/berenjenas.jpg">
+          </ion-thumbnail>
+          <ion-label>Berenjenas chinas agridulces</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/morcilla" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/morcilla.jpg">
+          </ion-thumbnail>
+          <ion-label>Morcilla Vegetariana</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/brocoli" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/brocoli.jpg">
+          </ion-thumbnail>
+          <ion-label>Salteado de brócoli y champiñones</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/lentejas" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/lentejas.jpg">
+          </ion-thumbnail>
+          <ion-label>Hummus de lentejas con papadums</ion-label>
+        </ion-item>
+
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'oriental'">
+        <ion-item>
+            <img src="assets/orienta.PNG">
+        </ion-item>
+
+        <ion-item  routerLink="/rollito" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/rollito.jpg">
+          </ion-thumbnail>
+          <ion-label>Rollitos de primavera vegetales</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/atun" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/atun.jpg">
+          </ion-thumbnail>
+          <ion-label>Aperitivo de atún con arroz</ion-label>
+        </ion-item>
+
+      <ion-item  routerLink="/fideos" routerDirection="root">
+        <ion-thumbnail slot="start">
+          <img src="assets/fideos.jpg">
+        </ion-thumbnail>
+        <ion-label>Wok de verduras y fideos chinos</ion-label>
+      </ion-item>
+
+      <ion-item  routerLink="/arrozo" routerDirection="root">
+        <ion-thumbnail slot="start">
+          <img src="assets/arrozo.jpg">
+        </ion-thumbnail>
+        <ion-label>Arroz al estilo oriental</ion-label>
+      </ion-item>
+
+      <ion-item  routerLink="/nishime" routerDirection="root">
+        <ion-thumbnail slot="start">
+          <img src="assets/nishime.jpg">
+        </ion-thumbnail>
+        <ion-label>Nishime de verduras</ion-label>
+      </ion-item>
+
+      <ion-item  routerLink="/cerdo" routerDirection="root">
+        <ion-thumbnail slot="start">
+          <img src="assets/cerdo.jpg">
+        </ion-thumbnail>
+        <ion-label>Solomillo de cerdo agridulce</ion-label>
+      </ion-item>
+
+      <ion-item  routerLink="/gambas" routerDirection="root">
+        <ion-thumbnail slot="start">
+          <img src="assets/gambas.jpg">
+        </ion-thumbnail>
+        <ion-label>Noodles de arroz con gambas y shiitakes</ion-label>
+      </ion-item>
+
+      <ion-item  routerLink="/alga" routerDirection="root">
+        <ion-thumbnail slot="start">
+          <img src="assets/alga.jpg">
+        </ion-thumbnail>
+        <ion-label>Rollitos de alga nori con verduras en tempura</ion-label>
+      </ion-item>
+
+      <ion-item  routerLink="/cintas" routerDirection="root">
+        <ion-thumbnail slot="start">
+          <img src="assets/cintas.jpg">
+        </ion-thumbnail>
+        <ion-label>Salteado oriental con cintas de arroz</ion-label>
+      </ion-item>
+
+      <ion-item  routerLink="/soja" routerDirection="root">
+        <ion-thumbnail slot="start">
+          <img src="assets/soja.jpg">
+        </ion-thumbnail>
+        <ion-label>Pollo con arroz y brotes de soja</ion-label>
+      </ion-item>
+
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'latino'">
+        <ion-item>
+            <img src="assets/latino.PNG">
+        </ion-item>
+
+        <ion-item  routerLink="/huevo" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/huevo.jpeg">
+          </ion-thumbnail>
+          <ion-label>Huevocate</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/churros" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/churros.jpg">
+          </ion-thumbnail>
+          <ion-label>Churros</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/camote" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/camote.jpeg">
+          </ion-thumbnail>
+          <ion-label>Empanadas de Camote</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/coco" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/coco.jpeg">
+          </ion-thumbnail>
+          <ion-label>Coco Bananas</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/pollo" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/pollo.jpg">
+          </ion-thumbnail>
+          <ion-label>Pamplona de Pollo</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/gallina" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/gallina.jpg">
+          </ion-thumbnail>
+          <ion-label>Ají de Gallina</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/milanesa" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/milanesa.jpeg">
+          </ion-thumbnail>
+          <ion-label>Milanesa de Pollo Explosiva</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/patacones" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/patacones.jpeg">
+          </ion-thumbnail>
+          <ion-label>Patacones con Guacamole</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/yuca" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/yuca.jpeg">
+          </ion-thumbnail>
+          <ion-label>Yucas Fritas a la Huancaína</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/carne" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/carne.jpeg">
+          </ion-thumbnail>
+          <ion-label>Empanadas de Carne Fritas</ion-label>
+        </ion-item>
+
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'tipico'">
+        <ion-item>
+            <img src="assets/tipico.PNG">
+        </ion-item>
+
+        <ion-item  routerLink="/chile" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/chile.jpg">
+          </ion-thumbnail>
+          <ion-label>Chiles Rellenos</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/hilachas" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/hilachas.jpg">
+          </ion-thumbnail>
+          <ion-label>Hilachas</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/elote" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/elote.jpg">
+          </ion-thumbnail>
+          <ion-label>Tamalitos de Elote</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/frijol" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/frijol.jpg">
+          </ion-thumbnail>
+          <ion-label>Frijoles Negros Colados</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/fiambre" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/fiambre.jpg">
+          </ion-thumbnail>
+          <ion-label>Fiambre</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/chilaquiles" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/chilaquiles.jpg">
+          </ion-thumbnail>
+          <ion-label>Chilaquiles</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/molletes" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/molletes.jpg">
+          </ion-thumbnail>
+          <ion-label>Molletes</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/platano" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/platano.jpg">
+          </ion-thumbnail>
+          <ion-label>Plátano en Mole</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/ponche" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/ponche.jpg">
+          </ion-thumbnail>
+          <ion-label>Ponche de Frutas</ion-label>
+        </ion-item>
+
+        <ion-item  routerLink="/picado" routerDirection="root">
+          <ion-thumbnail slot="start">
+            <img src="assets/picado.jpg">
+          </ion-thumbnail>
+          <ion-label>Picado de Rábano</ion-label>
+        </ion-item>
+
+    </ion-list>
+  </div>
+
+  <ion-list>
+    <ion-item-sliding *ngFor='let task of tasks | async'>
+      <ion-item>
+        <ion-label></ion-label>
+        <ion-checkbox (ionChange)="updateTask( task )" [checked]="task.done"></ion-checkbox>
+      </ion-item>
+       <ion-item-options>
+        <button ion-button color="danger" (click)="removeTask( task )">
+          Delete
+        </button>
+       </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+</ion-content>
