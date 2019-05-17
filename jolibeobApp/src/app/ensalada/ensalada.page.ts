@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-ensalada',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EnsaladaPage implements OnInit {
 
-  constructor() { }
+  params:string;
+  constructor(public navCtrl: NavController, private activeRoute:ActivatedRoute ) { }
 
   ngOnInit() {
+    console.log("init bulgur")
+    this.params = this.activeRoute.snapshot.paramMap.get('pre');
+    console.log("params", this.params)
+  }
+
+  back(){
+    console.log("params", this.params)
+    this.navCtrl.navigateBack(this.params);
+
   }
 
 }

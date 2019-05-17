@@ -23,7 +23,7 @@
   </ion-chip>
   <button ion-button (click)="buscar()">Default</button>
   <br><br>
-  <ion-item  [routerLink]="item.link" routerDirection="root" *ngFor="let item of recetasEncontradas">
+  <ion-item  [routerLink]="[item.link, path]" routerDirection="forward" *ngFor="let item of recetasEncontradas">
     <ion-thumbnail slot="start">
       <img src="assets/hilachas.jpg">
     </ion-thumbnail>
