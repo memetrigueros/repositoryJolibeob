@@ -21,6 +21,14 @@
     <ion-label>{{item}}</ion-label>
     <ion-icon name="close" (click)="eliminar(item)"></ion-icon>
   </ion-chip>
+  <button ion-button (click)="buscar()">Default</button>
+  <br><br>
+  <ion-item  [routerLink]="item.link" routerDirection="root" *ngFor="let item of recetasEncontradas">
+    <ion-thumbnail slot="start">
+      <img src="assets/hilachas.jpg">
+    </ion-thumbnail>
+    <ion-label>{{item.nombre}}</ion-label>
+  </ion-item>
 <!--
   <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
   <ion-list>
