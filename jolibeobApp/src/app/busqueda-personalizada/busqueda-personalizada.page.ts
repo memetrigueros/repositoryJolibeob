@@ -15,7 +15,7 @@ export class BusquedaPersonalizadaPage implements OnInit {
 		  {"link":"/arroz/","img": "assets/arroz.jpg", "ingredientes": "arroz,aguacate,lechuga,aceituna,huevos,queso", "nombre": "Ensalada de arroz y guacamole"},
 			{"link":"/brocoli/","img": "assets/brocoli.jpg", "ingredientes": "champiñones,brocoli,sal,aceite", "nombre": "Saltiado de brocoli y champiñones"},
 			{"link":"/rollito/", "img": "assets/rollito.jpg","ingredientes": "arroz,zanahoria,col,judias,pimiento,cebolla", "nombre": "Rollitos de primavera vegetales"},
-      {"link":"/atun/","img": "assets/atun.jpg", "ingredientes": "atun,arroz,aceite,salsa,sal,soja", "nombre": "Aperitivo de atún con arroz"},
+      {"link":"/atun/", "img": "assets/atun.jpg", "ingredientes": "atun,arroz,aceite,salsa,sal,soja", "nombre": "Aperitivo de atún con arroz"},
       {"link":"/fideos/","img": "assets/fideos.jpg", "ingredientes": "", "nombre": "Wok de verduras y fideos chinos"},
       {"link":"/arrozo/","img": "assets/arrozo.jpg", "ingredientes": "arroz,gambas,cebolla,pimiento,champiñones,brocoli,pechuga,pollo,aceite,salsa,zanahoria,puerro,pimiento", "nombre": "Arroz al estilo oriental"},
       {"link":"/nishime/","img": "assets/nishime.jpg", "ingredientes": "cebolla,calabaza,zanahoria,coliflor,alga,algas,salsa,soja", "nombre": "Nishime de verduras"},
