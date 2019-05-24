@@ -12,7 +12,6 @@ export class CategoriaPage implements OnInit {
 
   // tasksRef: AngularFireList<any>;
   // tasks: Observable<any[]>;
-  pet:any;
   see = true;
   path = "/categoria"
   constructor(private menuCtrl: MenuController) {
