@@ -14,12 +14,13 @@ import { AngularFireModule } from '@angular/fire';
 // import { AngularFireStorageModule } from '@angular/fire/storage';
 // import { AngularFireAuthModule } from '@angular/fire/auth';import { AngularFireAuth } from 'angularfire2/auth';
 
-import { firebaseConfig } from '../environments/environment';
+import { environment } from '../environments/environment';
 
 import { AngularFireAuthModule } from '@angular/fire/auth';
 
-import { environment } from '../environments/environment';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+export const firebaseConfig = environment.firebase;
+import { FormsModule } from '@angular/forms';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 
 
@@ -34,7 +35,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
     // AngularFireModule.initializeApp(environment.firebase), // imports firebase/app
     // AngularFirestoreModule, // imports firebase/firestore
     // AngularFireAuthModule, // imports firebase/auth

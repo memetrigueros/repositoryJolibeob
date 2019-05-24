@@ -10,6 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 export class FavoritosPage implements OnInit {
 
   params:string;
+  pet:any;
   constructor(public navCtrl: NavController, private activeRoute:ActivatedRoute ) { }
 
   ngOnInit() {

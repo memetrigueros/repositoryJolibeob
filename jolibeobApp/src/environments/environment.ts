@@ -3,18 +3,27 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: true,
+  firebase: {
+      apiKey: "AIzaSyBHDdJRNFHtWkYhmGU_LDlboGeYXRRQlO0",
+      authDomain: "jolibeob-apprecetas.firebaseapp.com",
+      databaseURL: "https://jolibeob-apprecetas.firebaseio.com",
+      projectId: "jolibeob-apprecetas",
+      storageBucket: "jolibeob-apprecetas.appspot.com",
+      messagingSenderId: "409653471650",
+      appId: "1:409653471650:web:28fcb1043ed1348e"
+    }
 };
 
-export const firebaseConfig = {
-    apiKey: "AIzaSyBHDdJRNFHtWkYhmGU_LDlboGeYXRRQlO0",
-    authDomain: "jolibeob-apprecetas.firebaseapp.com",
-    databaseURL: "https://jolibeob-apprecetas.firebaseio.com",
-    projectId: "jolibeob-apprecetas",
-    storageBucket: "jolibeob-apprecetas.appspot.com",
-    messagingSenderId: "409653471650",
-    appId: "1:409653471650:web:28fcb1043ed1348e"
-  };
+// export const firebaseConfig = {
+//     apiKey: "AIzaSyBHDdJRNFHtWkYhmGU_LDlboGeYXRRQlO0",
+//     authDomain: "jolibeob-apprecetas.firebaseapp.com",
+//     databaseURL: "https://jolibeob-apprecetas.firebaseio.com",
+//     projectId: "jolibeob-apprecetas",
+//     storageBucket: "jolibeob-apprecetas.appspot.com",
+//     messagingSenderId: "409653471650",
+//     appId: "1:409653471650:web:28fcb1043ed1348e"
+//   };
 
 
 /*
